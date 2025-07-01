@@ -1,0 +1,22 @@
+{
+  "name": "ebook-store",
+  "version": "1.0.0",
+  "description": "An interactive eBook store with modern UI and animations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-client": "cd frontend && npm install",
+    "install-server": "cd backend && npm install",
+    "install-all": "npm install && npm run install-server && npm run install-client"
+  },
+  "keywords": ["ebook", "store", "mern", "react", "node"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
